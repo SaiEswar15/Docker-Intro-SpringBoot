@@ -1,6 +1,7 @@
 FROM openjdk:17
 
-COPY target/*.jar app.jar
+ADD target/docker-simple-project.jar docker-simple-project.jar
+# COPY target/*.jar app.jar
 
 EXPOSE 8080
 
